@@ -1,0 +1,7 @@
+{
+  "name": "NaturaScale Manager",
+  "description": "Um sistema completo de gestão para lojas de produtos naturais, focado em vendas a granel, controle de estoque inteligente e integração de balanças.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
