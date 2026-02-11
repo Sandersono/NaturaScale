@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { FinancialTransaction } from '../types';
 
@@ -132,7 +131,7 @@ const Finance: React.FC<FinanceProps> = ({ transactions, onAddTransaction }) => 
                   type="number" 
                   className="w-full px-4 py-3 rounded-xl border border-stone-200 bg-stone-50 text-stone-900 font-bold outline-none focus:bg-white focus:border-emerald-500 transition-all text-lg"
                   value={form.amount}
-                  onChange={e => setForm({...form, amount: e.target.value})}
+                  onChange={e => setForm({...form, amount: Number(e.target.value)})}
                 />
               </div>
               <button onClick={handleSave} className="w-full bg-stone-900 text-white py-4 rounded-xl font-bold hover:bg-stone-800 transition-all">SALVAR REGISTRO</button>
